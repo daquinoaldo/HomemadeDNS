@@ -27,6 +27,7 @@ echo 'OK.'
 
 # Executing bash script
 echo -e '\nExecuting bash script...'
+chmod +x HomemadeDNS.sh
 ./HomemadeDNS.sh
 
 # Adding the crontab job
