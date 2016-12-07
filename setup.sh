@@ -1,5 +1,6 @@
 # Getting password from user
-echo 'First of all choose a password'
+echo 'First of all choose a password. NOT an important password: it is clear in your web history.'
+echo "You don't have to remember it."
 read password
 
 # Building php script
@@ -21,8 +22,8 @@ echo "password=\"$password\"" >> HomemadeDNS.sh
 echo '# End Configs' >> HomemadeDNS.sh
 echo 'ip=$(curl -s http://ipecho.net/plain)' >> HomemadeDNS.sh
 echo 'url=$baseurl"?pw="$password"&set&ip="$ip' >> HomemadeDNS.sh
-echo 'curl -s -stderr error.log $url' >> HomemadeDNS.sh
-echo 'echo ""' >> HomemadeDNS.sh
+echo 'curl -s -stderr error.log $url >> homemadedns.log' >> HomemadeDNS.sh
+echo 'echo "" >> homemadedns.log' >> HomemadeDNS.sh
 echo 'OK.'
 
 # Executing bash script
