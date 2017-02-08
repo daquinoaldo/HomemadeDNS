@@ -1,6 +1,5 @@
 # HomemadeDNS
-Do you need a DynDNS server for free? Just do it yourself with your website!
-
+Do you need a DynDNS server for free? Just do it yourself with your website!  
 (you need a web hosting, also a free plan is okay!)
 
 
